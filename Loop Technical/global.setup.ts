@@ -1,7 +1,7 @@
 import{test as setup} from "./Fixture/page.fixture"
 import { STORAGE_STATE_ADMIN } from "./playwright.config";
 
-setup("Admin login Token", async ({ page, loginPage, webApplicationPage }) => {
+setup("Admin login Token", async ({ page, loginPage }) => {
   await page.goto("/");
   await loginPage.EnterUserName();
   await loginPage.EnterPassword();
