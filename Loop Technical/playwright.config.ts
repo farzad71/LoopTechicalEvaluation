@@ -7,7 +7,7 @@ import ENV from "./utils/ENV";
  * https://github.com/motdotla/dotenv
  */
 // require('dotenv').config();
-dotenv.config({ path: `./env/.env.${process.env.test_env}`});
+dotenv.config({ path: `.env.${process.env.test_env}`});
 require('dotenv').config({ path: `.env.${process.env.ADMIN_ACCESS_TOKEN}` });
 /**
  * See https://playwright.dev/docs/test-configuration.
